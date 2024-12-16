@@ -6,6 +6,8 @@
     <title>La Cala Leilighet</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css" />
     <script src="scripts.js" defer></script>
 </head>
 <body>
@@ -23,54 +25,46 @@
 
     <section id="gallery">
         <h2>Galleri</h2>
-        <div class="gallery">
-            <img src="images\balcon2.jpg" alt="Stue">
-            <img src="images\balcon3.jpg" alt="Soverom">
-            <img src="images\balcon4.jpg" alt="Utsikt">
-            <img src="images\balcon5.jpg" alt="Basseng">
-            <img src="images\bed2.jpg" alt="Stue">
-            <img src="images\blacon.jpg" alt="Soverom">
-            <img src="images\cocina.jpg" alt="Utsikt">
-            <img src="images\dormitorio1.jpg" alt="Basseng">
-            <img src="images\dormitorio2.jpg" alt="Stue">
-            <img src="images\gym.jpg" alt="Soverom">
-            <img src="images\dormitorio3.jpg" alt="Utsikt">
-            <img src="images\jacuzzi.jpg" alt="Basseng">
-            <img src="images\piscina.jpg" alt="Stue">
-            <img src="images\piscina2.jpg" alt="Soverom">
-            <img src="images\piscina3.jpg" alt="Utsikt">
-            <img src="images\puerta.jpg" alt="Basseng">
-            <img src="images\stue.jpg" alt="Soverom">
-            <img src="images\view.jpg" alt="Utsikt">
-            <img src="images\wc1.jpg" alt="Basseng">
-            <img src="images\wc2.jpg" alt="Stue">
-            <img src="images\wc3.jpg" alt="Soverom">
-            <img src="images\wc4.jpg" alt="Utsikt">
-            <img src="images\wc5.jpg" alt="Basseng">
+        <div id="lightgallery" class="gallery">
+            <a href="images/balcon2.jpg"><img src="images/balcon2.jpg" alt="Balcon"></a>
+            <a href="images/balcon3.jpg"><img src="images/balcon3.jpg" alt="Balcon"></a>
+            <a href="images/balcon4.jpg"><img src="images/balcon4.jpg" alt="Balcon"></a>
+            <a href="images/balcon5.jpg"><img src="images/balcon5.jpg" alt="Balcon"></a>
+            <a href="images/bed2.jpg"><img src="images/bed2.jpg" alt="Bed"></a>
+            <a href="images/blacon.jpg"><img src="images/blacon.jpg" alt="Blacon"></a>
+            <a href="images/cocina.jpg"><img src="images/cocina.jpg" alt="Kitchen"></a>
+            <a href="images/dormitorio1.jpg"><img src="images/dormitorio1.jpg" alt="Bedroom"></a>
+            <a href="images/dormitorio2.jpg"><img src="images/dormitorio2.jpg" alt="Bedroom"></a>
+            <a href="images/gym.jpg"><img src="images/gym.jpg" alt="Gym"></a>
+            <a href="images/dormitorio3.jpg"><img src="images/dormitorio3.jpg" alt="Bedroom"></a>
+            <a href="images/jacuzzi.jpg"><img src="images/jacuzzi.jpg" alt="Jacuzzi"></a>
+            <a href="images/piscina.jpg"><img src="images/piscina.jpg" alt="Pool"></a>
+            <a href="images/piscina2.jpg"><img src="images/piscina2.jpg" alt="Pool"></a>
+            <a href="images/piscina3.jpg"><img src="images/piscina3.jpg" alt="Pool"></a>
+            <a href="images/puerta.jpg"><img src="images/puerta.jpg" alt="Door"></a>
+            <a href="images/stue.jpg"><img src="images/stue.jpg" alt="Living Room"></a>
+            <a href="images/view.jpg"><img src="images/view.jpg" alt="View"></a>
+            <a href="images/wc1.jpg"><img src="images/wc1.jpg" alt="Bathroom"></a>
+            <a href="images/wc2.jpg"><img src="images/wc2.jpg" alt="Bathroom"></a>
+            <a href="images/wc3.jpg"><img src="images/wc3.jpg" alt="Bathroom"></a>
+            <a href="images/wc4.jpg"><img src="images/wc4.jpg" alt="Bathroom"></a>
+            <a href="images/wc5.jpg"><img src="images/wc5.jpg" alt="Bathroom"></a>
         </div>
     </section>
 
     <section id="details">
         <h2>Fasiliteter</h2>
-        <ul>
-            <li><img src="icons/bed.svg.png" alt="Bed Icon"> 2 Soverom med dobbeltsenger</li>
-            <li><img src="icons/sofa.svg.png" alt="Sofa Icon"> Stue med sofa</li>
-            <li><img src="icons/tv.svg.png" alt="Tv Icon">Apple Tv</li>
-            <li><img src="icons/shower.svg.png" alt="Shower Icon"> 2 Bad med dusj og toalett</li>
-            <li><img src="icons/kitchen.svg.png" alt="Kitchen Icon"> Fullt utstyrt kjøkken</li>
-            <li><img src="icons/air-conditioner.svg.png" alt="AC Icon"> Aircondition</li>
-            <li><img src="icons/wifi.svg.png" alt="WiFi Icon"> Gratis Wi-Fi</li>
-            <li><img src="icons/gym.svg.png" alt="Gym Icon"> Gym </li>
-            <li><img src="icons/vask.svg.png" alt="Vaskemaskin Icon"> Gym </li>
-        </ul>
-    </section>
-
-    <section id="map">
-        <h2>Se Leiligheten på Kartet</h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.5677182189233!2d-4.683834484559114!3d36.507850680008146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7221d54e69e73d%3A0x33b89bb36a3b1e95!2sLa%20Cala%20de%20Mijas!5e0!3m2!1sen!2sno!4v1700000000000!5m2!1sen!2sno"
-            width="100%" height="450" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <div class="icons-container">
+            <div><img src="icons/bed.svg.png" alt="Bed Icon"> 2 Soverom med dobbeltsenger</div>
+            <div><img src="icons/sofa.svg.png" alt="Sofa Icon"> Stue med sofa</div>
+            <div><img src="icons/tv.svg.png" alt="Tv Icon"> Apple Tv</div>
+            <div><img src="icons/shower.svg.png" alt="Shower Icon"> 2 Bad med dusj og toalett</div>
+            <div><img src="icons/kitchen.svg.png" alt="Kitchen Icon"> Fullt utstyrt kjøkken</div>
+            <div><img src="icons/air-conditioner.svg.png" alt="AC Icon"> Aircondition</div>
+            <div><img src="icons/wifi.svg.png" alt="WiFi Icon"> Gratis Wi-Fi</div>
+            <div><img src="icons/gym.svg.png" alt="Gym Icon"> Gym</div>
+            <div><img src="icons/vask.svg.png" alt="Vaskemaskin Icon"> Vaskemaskin</div>
+        </div>
     </section>
 
     <section id="calendar">
@@ -96,5 +90,9 @@
     <footer>
         <p>&copy; 2024 La Cala Leilighet. Alle rettigheter reservert.</p>
     </footer>
+
+    <script>
+        lightGallery(document.getElementById('lightgallery'));
+    </script>
 </body>
 </html>

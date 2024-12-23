@@ -6,7 +6,6 @@
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://apis.google.com https://www.gstatic.com;">
     <title>La Cala Leilighet</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://apis.google.com/js/api.js"></script>
 </head>
 <body>
     <header>
@@ -17,7 +16,7 @@
     <nav>
         <a href="#gallery">Galleri</a>
         <a href="#details">Detaljer</a>
-        <a href="#calendar">Reserver</a>
+        <a href="#calendar-and-form">Reserver</a>
         <a href="recommendations.html">Anbefalinger</a>
     </nav>
 
@@ -74,17 +73,53 @@
         </div>
     </section>
 
-    <section id="calendar">
+    <section id="calendar-and-form">
         <h2>Reserver Nå</h2>
-        <div id="calendar-container">
-            <!-- Aquí se mostrarán las reservas -->
+        <div class="calendar-form-container">
+            <!-- Calendario -->
+            <iframe src="https://calendar.google.com/calendar/embed?src=lacalaleilighet%40gmail.com&ctz=Europe%2FOslo" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+            
+            <!-- Formulario -->
+            <form action="https://formspree.io/f/{your_form_id}" method="POST" class="contact-form">
+                <!-- Nombre -->
+                <label for="name">Navn <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Navn" required>
+    
+                <!-- Email -->
+                <label for="email">E-post <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Din e-postadresse" required>
+    
+                <!-- Teléfono -->
+                <label for="phone">Telefon <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="Telefonnummer" required>
+    
+                <!-- Fecha de reserva Desde -->
+                <label for="date-from">Dato fra <span class="required">*</span></label>
+                <input type="date" id="date-from" name="date-from" min="" required>
+    
+                <!-- Fecha de reserva Hasta -->
+                <label for="date-to">Dato til <span class="required">*</span></label>
+                <input type="date" id="date-to" name="date-to" min="" required>
+    
+                <!-- Texto descriptivo -->
+                <label for="message">Beskrivelse (valgfritt)</label>
+                <textarea id="message" name="message" placeholder="Legg til en beskrivelse..."></textarea>
+    
+                <!-- Botones -->
+                <div class="form-buttons">
+                    <button type="reset" class="reset-button">Tøm</button>
+                    <button type="submit" class="submit-button">Send</button>
+                </div>
+            </form>
         </div>
-    </section>
+    </section> 
 
     <footer>
         <p>&copy; 2024 La Cala Leilighet. Alle rettigheter reservert.</p>
     </footer>
 
+    <!-- Scripts -->
+    <script src="init.js"></script>
     <script src="calendar.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 const CALENDAR_ID = 'lacalaleilighet@gmail.com'; // Reemplaza con el ID de tu calendario
-const API_KEY = 'TU_API_KEY'; // Reemplaza con tu Clave de API
+const API_KEY = 'AIzaSyBn49YdFAK-QlqGPpuU7WNTKeEs92_VPwQ'; // Reemplaza con tu Clave de API
 
 function loadCalendar() {
     const url = `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}&timeMin=${new Date().toISOString()}&singleEvents=true&orderBy=startTime`;

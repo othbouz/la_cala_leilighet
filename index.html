@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Cala Leilighet</title>
+    <!-- CSS Principal -->
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css" />
-    <script src="scripts.js" defer></script>
+    <!-- Google API Library -->
+    <script src="https://apis.google.com/js/api.js"></script>
 </head>
 <body>
     <header>
@@ -25,52 +24,68 @@
 
     <section id="gallery">
         <h2>Galleri</h2>
-        <div id="lightgallery" class="gallery">
-            <a href="images/balcon2.jpg"><img src="images/balcon2.jpg" alt="Balcon"></a>
-            <a href="images/balcon3.jpg"><img src="images/balcon3.jpg" alt="Balcon"></a>
-            <a href="images/balcon4.jpg"><img src="images/balcon4.jpg" alt="Balcon"></a>
-            <a href="images/balcon5.jpg"><img src="images/balcon5.jpg" alt="Balcon"></a>
-            <a href="images/bed2.jpg"><img src="images/bed2.jpg" alt="Bed"></a>
-            <a href="images/blacon.jpg"><img src="images/blacon.jpg" alt="Blacon"></a>
-            <a href="images/cocina.jpg"><img src="images/cocina.jpg" alt="Kitchen"></a>
-            <a href="images/dormitorio1.jpg"><img src="images/dormitorio1.jpg" alt="Bedroom"></a>
-            <a href="images/dormitorio2.jpg"><img src="images/dormitorio2.jpg" alt="Bedroom"></a>
-            <a href="images/gym.jpg"><img src="images/gym.jpg" alt="Gym"></a>
-            <a href="images/dormitorio3.jpg"><img src="images/dormitorio3.jpg" alt="Bedroom"></a>
-            <a href="images/jacuzzi.jpg"><img src="images/jacuzzi.jpg" alt="Jacuzzi"></a>
-            <a href="images/piscina.jpg"><img src="images/piscina.jpg" alt="Pool"></a>
-            <a href="images/piscina2.jpg"><img src="images/piscina2.jpg" alt="Pool"></a>
-            <a href="images/piscina3.jpg"><img src="images/piscina3.jpg" alt="Pool"></a>
-            <a href="images/puerta.jpg"><img src="images/puerta.jpg" alt="Door"></a>
-            <a href="images/stue.jpg"><img src="images/stue.jpg" alt="Living Room"></a>
-            <a href="images/view.jpg"><img src="images/view.jpg" alt="View"></a>
-            <a href="images/wc1.jpg"><img src="images/wc1.jpg" alt="Bathroom"></a>
-            <a href="images/wc2.jpg"><img src="images/wc2.jpg" alt="Bathroom"></a>
-            <a href="images/wc3.jpg"><img src="images/wc3.jpg" alt="Bathroom"></a>
-            <a href="images/wc4.jpg"><img src="images/wc4.jpg" alt="Bathroom"></a>
-            <a href="images/wc5.jpg"><img src="images/wc5.jpg" alt="Bathroom"></a>
+        <div class="gallery">
+            <img src="images/balcon2.jpg" alt="Balcon">
+            <img src="images/balcon3.jpg" alt="Balcon">
+            <img src="images/balcon4.jpg" alt="Balcon">
+            <img src="images/balcon5.jpg" alt="Balcon">
+            <img src="images/bed2.jpg" alt="Bed">
         </div>
     </section>
 
     <section id="details">
         <h2>Fasiliteter</h2>
         <div class="icons-container">
-            <div><img src="icons/bed.svg" alt="Bed Icon"> 2 Soverom med dobbeltsenger</div>
-            <div><img src="icons/sofa.svg" alt="Sofa Icon"> Stue med sofa</div>
-            <div><img src="icons/tv.svg" alt="Tv Icon"> Apple Tv</div>
-            <div><img src="icons/shower.svg" alt="Shower Icon"> 2 Bad med dusj og toalett</div>
-            <div><img src="icons/kitchen.svg" alt="Kitchen Icon"> Fullt utstyrt kjøkken</div>
-            <div><img src="icons/air-conditioner.svg" alt="AC Icon"> Aircondition</div>
-            <div><img src="icons/wifi.svg" alt="WiFi Icon"> Gratis Wi-Fi</div>
-            <div><img src="icons/gym.svg" alt="Gym Icon"> Gym</div>
-            <div><img src="icons/vask.svg" alt="Vaskemaskin Icon"> Vaskemaskin</div>
+            <div class="facility-item">
+                <img src="icons/bed.svg.png" alt="Bed Icon">
+                <span>2 Soverom med dobbeltsenger</span>
+            </div>
+            <div class="facility-item">
+                <img src="icons/sofa.svg.png" alt="Sofa Icon">
+                <span>Stue med sofa</span>
+            </div>
+            <div class="facility-item">
+                <img src="icons/tv.svg.png" alt="Tv Icon">
+                <span>Apple Tv</span>
+            </div>
+            <div class="facility-item">
+                <img src="icons/shower.svg.png" alt="Shower Icon">
+                <span>2 Bad med dusj og toalett</span>
+            </div>
+            <div class="facility-item">
+                <img src="icons/kitchen.svg.png" alt="Kitchen Icon">
+                <span>Fullt utstyrt kjøkken</span>
+            </div>
+            <div class="facility-item">
+                <img src="icons/air-conditioner.svg.png" alt="AC Icon">
+                <span>Aircondition</span>
+            </div>
+            <div class="facility-item">
+                <img src="icons/wifi.svg.png" alt="WiFi Icon">
+                <span>Gratis Wi-Fi</span>
+            </div>
+            <div class="facility-item">
+                <img src="icons/gym.svg.png" alt="Gym Icon">
+                <span>Gym</span>
+            </div>
+            <div class="facility-item">
+                <img src="icons/vask.svg.png" alt="Vaskemaskin Icon">
+                <span>Vaskemaskin</span>
+            </div>
         </div>
     </section>
 
     <section id="calendar">
         <h2>Reserver Nå</h2>
+        <!-- Botones para autenticarse -->
+        <button id="authorize-button" style="display: none;">Autorizar</button>
+        <button id="signout-button" style="display: none;">Cerrar sesión</button>
+
+        <!-- Contenedor del calendario -->
         <div id="calendar-and-form">
-            <div id="calendar-container"></div>
+            <div id="calendar-container">
+                <!-- Aquí se cargarán los eventos desde el calendario -->
+            </div>
             <form action="https://formspree.io/f/{your_form_id}" method="POST">
                 <label for="name">Navn:</label>
                 <input type="text" id="name" name="name" placeholder="Navn" required>
@@ -91,8 +106,13 @@
         <p>&copy; 2024 La Cala Leilighet. Alle rettigheter reservert.</p>
     </footer>
 
+    <!-- Script de integración con Google Calendar -->
+    <script src="calendar.js"></script>
     <script>
-        lightGallery(document.getElementById('lightgallery'));
+        // Cargar la API de Google cuando la página se haya cargado
+        document.addEventListener("DOMContentLoaded", () => {
+            handleClientLoad();
+        });
     </script>
 </body>
 </html>

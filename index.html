@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://apis.google.com https://www.gstatic.com 'unsafe-inline' 'unsafe-eval'; frame-src https://accounts.google.com/;">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://apis.google.com https://www.gstatic.com;">
     <title>La Cala Leilighet</title>
-    <!-- CSS Principal -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Google API Library -->
     <script src="https://apis.google.com/js/api.js"></script>
 </head>
 <body>
@@ -78,28 +76,8 @@
 
     <section id="calendar">
         <h2>Reserver Nå</h2>
-        <!-- Botones para autenticarse -->
-        <button id="authorize-button" style="display: none;">Autorizar</button>
-        <button id="signout-button" style="display: none;">Cerrar sesión</button>
-
-        <!-- Contenedor del calendario -->
-        <div id="calendar-and-form">
-            <div id="calendar-container">
-                <!-- Aquí se cargarán los eventos desde el calendario -->
-            </div>
-            <form action="https://formspree.io/f/{your_form_id}" method="POST">
-                <label for="name">Navn:</label>
-                <input type="text" id="name" name="name" placeholder="Navn" required>
-
-                <label for="email">E-post:</label>
-                <input type="email" id="email" name="email" placeholder="E-post" required>
-
-                <label for="dates">Ønskede datoer:</label>
-                <input type="text" id="dates" name="dates" placeholder="Velg datoer fra kalenderen" readonly>
-
-                <button type="submit">Send forespørsel</button>
-                <button type="button" id="cancel-button">Avbryt</button>
-            </form>
+        <div id="calendar-container">
+            <!-- Aquí se mostrarán las reservas -->
         </div>
     </section>
 
@@ -107,8 +85,6 @@
         <p>&copy; 2024 La Cala Leilighet. Alle rettigheter reservert.</p>
     </footer>
 
-    <!-- Script de integración con Google Calendar -->
     <script src="calendar.js"></script>
-    <script src="init.js"></script>
 </body>
 </html>

@@ -80,7 +80,7 @@
             <iframe src="https://calendar.google.com/calendar/embed?src=lacalaleilighet%40gmail.com&ctz=Europe%2FOslo" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
             
             <!-- Formulario -->
-            <form action="https://formspree.io/f/{your_form_id}" method="POST" class="contact-form">
+            <form id="contact-form" method="POST" class="contact-form">
                 <!-- Nombre -->
                 <label for="name">Navn <span class="required">*</span></label>
                 <input type="text" id="name" name="name" placeholder="Navn" required>
@@ -95,11 +95,11 @@
     
                 <!-- Fecha de reserva Desde -->
                 <label for="date-from">Dato fra <span class="required">*</span></label>
-                <input type="date" id="date-from" name="date-from" min="" required>
+                <input type="date" id="date-from" name="date-from" required>
     
                 <!-- Fecha de reserva Hasta -->
                 <label for="date-to">Dato til <span class="required">*</span></label>
-                <input type="date" id="date-to" name="date-to" min="" required>
+                <input type="date" id="date-to" name="date-to" required>
     
                 <!-- Texto descriptivo -->
                 <label for="message">Beskrivelse (valgfritt)</label>
@@ -120,6 +120,37 @@
 
     <!-- Scripts -->
     <script src="init.js"></script>
-    <script src="calendar.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.getElementById("contact-form");
+            const formspreeEndpoint = "https://formspree.io/f/movvqogd"; // Cambia a tu ID
+
+            form.addEventListener("submit", async (e) => {
+                e.preventDefault(); // Detener comportamiento por defecto
+
+                const formData = new FormData(form);
+                const formObject = Object.fromEntries(formData.entries());
+
+                try {
+                    const response = await fetch(formspreeEndpoint, {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify(formObject),
+                    });
+
+                    if (response.ok) {
+                        window.location.href = "thank-you.html"; // Redirigir a thank-you.html
+                    } else {
+                        alert("No se pudo enviar el formulario. Intenta de nuevo más tarde.");
+                    }
+                } catch (error) {
+                    console.error("Error:", error);
+                    alert("Se produjo un error al enviar el formulario.");
+                }
+            });
+        });
+    </script>
 </body>
 </html>

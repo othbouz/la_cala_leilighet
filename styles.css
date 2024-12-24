@@ -273,4 +273,42 @@ iframe {
     box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
     outline: none;
 }
+/* Estilo para la página de agradecimiento */
+.thank-you-container {
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.thank-you-container h1 {
+    font-size: 2.5rem;
+    color: #1b4f72;
+    margin-bottom: 1rem;
+}
+
+.thank-you-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #34495e;
+}
+
+.thank-you-container a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background: #3498db;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.thank-you-container a:hover {
+    background: #2980b9;
+}
 

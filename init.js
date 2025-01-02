@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     dateTo.setAttribute("min", today);
 
     // Ajusta la fecha mínima del campo "Dato til" en función de "Dato fra"
+    
     dateFrom.addEventListener("change", function () {
         dateTo.setAttribute("min", dateFrom.value);
     });
